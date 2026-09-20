@@ -1,0 +1,187 @@
+.Navigation_Bar {
+    width: 100%;
+}
+
+.nav_bar {
+    width: 100%;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: clamp(15px, 5vw, 50px);
+    padding: 10px;
+    margin: 0;
+    background-color: rgb(250, 249, 249);
+}
+
+.nav li {
+    flex-shrink: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgb(50, 131, 223);
+    font-size: clamp(8px, 2vw, 18px);
+    white-space: nowrap;
+}
+
+.nav a:hover {
+    color: rgb(9, 80, 137);
+    background-color: azure;
+}
+
+.Banner {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.Banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.message {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    bottom: 0PX;
+
+    color: white;
+    text-align: center;
+    font-size: clamp(16px, 2.5vw, 30px);
+    background-color: black;
+    opacity: 60%;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Banner:hover .message {
+    display: flex;
+}
+
+.round_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round_image img {
+    width: clamp(70px, 10vw, 150px);
+    height: clamp(70px, 10vw, 150px);
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin-top: 2%;
+}
+
+.author_profile .intro {
+    text-align: center;
+    font-size: clamp(10px, 2.5vw, 20px);
+    color: rgb(50, 131, 223);
+}
+
+.author_profile hr {
+    width: clamp(100px, 60%, 200px);
+    border: none;
+    border-top: 2px solid rgb(50, 131, 223);
+    margin: 10px auto;
+}
+
+.author_profile .about_myself {
+    text-align: center;
+    font-size: clamp(15px, 3vw, 35px);
+    color: rgb(50, 131, 223);
+}
+
+.Portfolio {
+   width: 90%;
+    max-width: 600px;
+    margin: 20px auto 40px auto;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+    
+}
+
+.projects img {
+    width: 300px;
+    max-width: 250px;
+    object-fit: cover;
+    border-radius: 16px;
+    flex-shrink: 0;
+}
+
+.project_info {
+    color: rgb(50, 131, 223); 
+    font-size: 16px;
+    margin: 0;
+}
+
+.My_photos p {
+    text-align: center;
+    font-size: clamp(15px, 3vw, 35px);
+    color: rgb(50, 131, 223);
+}
+
+.My_photos hr{
+    width: clamp(100px, 60%, 200px);
+    border: none;
+    border-top: 2px solid rgb(50, 131, 223);
+    margin: 10px auto;
+}
+
+.gallery_section {
+   width: 95%;
+    max-width: 2000px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+
+.pinterest_gallery {
+    column-count: 6;      
+    column-gap: 14px;             
+    width: 100%;
+}
+
+.pinterest_gallery img {
+   width: 100%;
+    height: auto;                
+    margin-bottom: 14px;          
+    border-radius: 12px;          
+    display: block;
+    break-inside: avoid;          
+   
+}
+
+.pinterest_gallery img:hover {
+   transform: scale(1.03);
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .pinterest_gallery {
+        column-count: 3;
+    }
+}
+@media (max-width: 600px) {
+    .pinterest_gallery {
+        column-count: 2;
+    }
+}
+
